@@ -14,3 +14,5 @@ db['tom'] = tom
 if __name__ == '__main__':       # when run as a script
     for key in db:
         print(key, '=>\n  ', db[key])
+        for subKey in db[key]:
+            print('        ', subKey, ": ", db[key][subKey])
