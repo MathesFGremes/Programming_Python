@@ -10,6 +10,10 @@ def adder(addlock):                 # shared lock object passed in
     time.sleep(0.5)
     with addlock:
         count = count + 1           # only 1 thread updating at once
+    #with addlock: 
+    #    count = count + 1
+    #    time.sleep(0.5)
+    #    count = count + 1
 
 addlock = threading.Lock()
 threads = []

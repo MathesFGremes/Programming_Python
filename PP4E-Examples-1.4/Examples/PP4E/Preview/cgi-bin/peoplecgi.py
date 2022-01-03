@@ -3,7 +3,7 @@ Implement a web-based interface for viewing and updating class instances
 stored in a shelve; the shelve lives on server (same machine if localhost)
 """
 
-import cgi, shelve, sys, os                   # cgi.test() dumps inputs
+import cgi, shelve, sys, os, html                   # cgi.test() dumps inputs
 shelvename = 'class-shelve'                   # shelve files are in cwd
 fieldnames = ('name', 'age', 'job', 'pay')
 
@@ -39,7 +39,9 @@ def htmlize(adict):
     new = adict.copy()
     for field in fieldnames:                       # values may have &, >, etc.
         value = new[field]                         # display as code: quoted
-        new[field] = cgi.escape(repr(value))       # html-escape special chars
+        #new[field] = cgi.escape(repr(value))       # html-escape special chars
+        new[field] = html.escape(repr(value))
+
     return new
 
 def fetchRecord(db, form):

@@ -3,7 +3,7 @@ uses simple shared global data (not mutexes) to know when threads
 are done in parent/main thread; threads share list but not its items,
 assumes list won't move in memory once it has been created initially
 """
-
+import time
 import _thread as thread
 stdoutmutex = thread.allocate_lock()
 exitmutexes = [False] * 10

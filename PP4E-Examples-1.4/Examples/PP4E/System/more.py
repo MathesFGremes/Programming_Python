@@ -1,6 +1,7 @@
 """
 split and interactively page a string or file of text
 """
+import sys, os
 
 def more(text, numlines=15):
     lines = text.splitlines()                # like split('\n') but no '' at end
@@ -12,4 +13,9 @@ def more(text, numlines=15):
 
 if __name__ == '__main__':
     import sys                               # when run, not imported
-    more(open(sys.argv[1]).read(), 10)       # page contents of file on cmdline
+    #more(open(sys.argv[0]).read(), 10)       # page contents of file on cmdline
+
+    if len(sys.argv) == 1: 
+        more(sys.stdin.read()) 
+    else: 
+        more(open(sys.argv[1]).read())

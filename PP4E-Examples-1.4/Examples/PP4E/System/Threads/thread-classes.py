@@ -28,4 +28,5 @@ for i in range(10):
 
 for thread in threads:
     thread.join()                              # wait for thread exits
+    #print('tread Id: ', thread.myId)
 print('Main thread exiting.')

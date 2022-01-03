@@ -1,0 +1,14 @@
+Hello stream world
+Enter a number>8 squared is 64
+Enter a number>6 squared is 36
+Enter a number>10 squared is 100
+Enter a number>12 squared is 144
+Enter a number>15 squared is 225
+Enter a number>102 squared is 10404
+Enter a number>1254 squared is 1572516
+Enter a number>4543453 squared is 20642965163209
+Enter a number>4534543454 squared is 20562084336214250116
+Enter a number>65456456465456456 squared is 4284547693014196280809584432079936
+Enter a number>465456454564654654564 squared is 216649711095898422814743591032790166030096
+Enter a number>4566666646878797574647567546 squared is 20854444263715240462229769011906988485271210534632462116
+Enter a number>Bye

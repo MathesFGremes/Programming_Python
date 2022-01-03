@@ -12,7 +12,7 @@ name=>'Sue Jones'
 endrec.
 tom
 pay=>0
-job=>None
+job=>'Mat friend'
 age=>50
 name=>'Tom Tom'
 endrec.
