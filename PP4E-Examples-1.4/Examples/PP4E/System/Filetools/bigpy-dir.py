@@ -4,7 +4,8 @@ Search Windows Python source lib, unless dir command-line arg.
 """
 
 import os, glob, sys
-dirname = r'C:\Python31\Lib' if len(sys.argv) == 1 else sys.argv[1]
+#dirname = r'C:\Python31\Lib' if len(sys.argv) == 1 else sys.argv[1]
+dirname = r'C:\Users\mathe\AppData\Local\Programs\Python\Python39\Lib' if len(sys.argv) == 1 else sys.argv[1]
 
 allsizes = []
 allpy = glob.glob(dirname + os.sep + '*.py')
