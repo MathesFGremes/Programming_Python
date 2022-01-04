@@ -16,3 +16,6 @@ for filename in allpy:
 allsizes.sort()
 print(allsizes[:2])
 print(allsizes[-2:])
+print()
+#print(allsizes[:1])
+#print(allsizes[-1:])
